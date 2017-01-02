@@ -36,7 +36,10 @@ And here's that same cell in the *ipyaml* format:
 
 ## Installation
 
-Copy the `ipyaml` notebook somewhere on you Python path.
+IPYaml can be installed with pip:
+```
+pip install git+https://github.com/rschroll/ipyaml.git@master
+```
 
 ## Usage
 
