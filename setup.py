@@ -9,7 +9,7 @@ setup(
     long_description='Clean ipynb files on save',
     author='Robert Schroll',
     author_email='rschroll@gmail.com',
-    url='https://github.com/rschroll/ipyaml',
+    url='https://github.com/rschroll/ipyaml/tree/nbclean',
     packages=['nbclean'],
     package_data={'nbclean': ['nbext/*']},
     scripts=['cleanipynb'],
