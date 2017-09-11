@@ -40,7 +40,7 @@ And here's that same cell after we've cleaned it:
 
 ## Installation
 
-IPYaml can be installed with pip:
+NbClean can be installed with pip:
 ```
 pip install git+https://github.com/rschroll/ipyaml.git@nbclean
 ```
