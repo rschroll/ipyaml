@@ -21,14 +21,13 @@ define([
 
   function load_ipython_extension() {
     var action = {
+      icon: 'fa-paint-brush',
       help: 'Toggle Cleaned Output',
       help_index: 'zz',
       handler: toggle_nbclean
     };
     var full_action_name = Jupyter.actions.register(action, 'toggle-nbclean', 'nbclean');
-    var bg = Jupyter.toolbar.add_buttons_group([full_action_name])[0];
-    self.button = bg.children[0];
-    self.button.innerHTML = "Clean";
+    Jupyter.toolbar.add_buttons_group([full_action_name])[0];
 
     set_nbclean(Jupyter.notebook.metadata.nbclean);
   }
