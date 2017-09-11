@@ -12,7 +12,7 @@ setup(
     url='https://github.com/rschroll/ipyaml',
     packages=['nbclean'],
     package_data={'nbclean': ['nbext/*']},
-    #scripts=['ipyamlconvert'],
+    scripts=['cleanipynb'],
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',

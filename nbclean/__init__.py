@@ -1,6 +1,6 @@
 from os import path
 from notebook.nbextensions import check_nbextension, enable_nbextension, install_nbextension
-from .nbcleanmanager import NbCleanFileContentsManager
+from .nbcleanmanager import NbCleanFileContentsManager, clean_v4_nb
 
 def activate(config, user=True):
     config.NotebookApp.contents_manager_class = NbCleanFileContentsManager
