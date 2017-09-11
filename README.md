@@ -66,7 +66,7 @@ The `cleanipynb` script allows you to batch clean notebooks.  It will overwrite 
 
 ### Metadata
 
-NbClean adds notebook metadata key, `nbclean`, as a flag to indicate whether cleaning should happen on save.  This is turned on by the `cleanipynb` script.  This should be preserved by other Jupyter instances without NbClean.  It will not make them do the cleaning for you, unfortunately.
+NbClean adds notebook metadata key, `nbclean`, as a flag to indicate whether cleaning should happen on save.  This is turned on by the `cleanipynb` script by default, though this can be disabled.  This should be preserved by other Jupyter instances without NbClean.  It will not make them do the cleaning for you, unfortunately.
 
 ## License
 

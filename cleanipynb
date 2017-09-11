@@ -16,8 +16,10 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('notebook', nargs='+', help='Notebook to convert')
+    parser.add_argument('-F', '--no-flag', action='store_true',
+                        help="Don't add a flag to the notebook metadata")
     args = parser.parse_args()
 
     for fn in args.notebook:
         nb = nbformat.read(fn, nbformat.NO_CONVERT)
-        nbformat.write(clean_v4_nb(nb), fn)
+        nbformat.write(clean_v4_nb(nb, not args.no_flag), fn)

@@ -1,11 +1,12 @@
 from notebook.services.contents.filemanager import FileContentsManager
 import nbformat
 
-def clean_v4_nb(old_nb):
+def clean_v4_nb(old_nb, include_flag=True):
     new_nb = nbformat.v4.new_notebook(nbformat_minor=0)
 
     new_nb.metadata.kernelspec = old_nb.metadata.kernelspec
-    new_nb.metadata.nbclean = True
+    if include_flag:
+        new_nb.metadata.nbclean = True
 
     for cell in old_nb.cells:
         cell_factory = getattr(nbformat.v4, 'new_%s_cell' % cell.cell_type)
