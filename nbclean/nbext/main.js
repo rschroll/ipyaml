@@ -27,7 +27,8 @@ define([
       handler: toggle_nbclean
     };
     var full_action_name = Jupyter.actions.register(action, 'toggle-nbclean', 'nbclean');
-    Jupyter.toolbar.add_buttons_group([full_action_name])[0];
+    var bg = Jupyter.toolbar.add_buttons_group([full_action_name])[0];
+    self.button = bg.children[0];
 
     set_nbclean(Jupyter.notebook.metadata.nbclean);
   }
